@@ -1,0 +1,37 @@
+{
+  "name": "jtr",
+  "version": "0.0.1",
+  "description": "this is mock server",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "jtr": "./bin/jtr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuneAndGreen/jtr.git"
+  },
+  "keywords": [
+    "mock",
+    "server"
+  ],
+  "author": "june_01",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuneAndGreen/jtr/issues"
+  },
+  "homepage": "https://github.com/JuneAndGreen/jtr#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "commander": "^2.9.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-freemarker": "^0.1.4",
+    "express-velocity": "^1.0.0",
+    "http-proxy": "^1.13.2",
+    "path-to-regexp": "^1.2.1",
+    "qrcode-npm": "0.0.3"
+  }
+}
