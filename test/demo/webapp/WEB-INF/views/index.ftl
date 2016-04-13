@@ -17,6 +17,13 @@
   </head>
   <body id="www-wd-com">
 
+    <script>
+      window.mockAll = ${stringify(testarr!"error")};
+      window.mock0 = ${stringify(asarr!"error")};
+      window.mock1 = ${stringify(asobj!"error")};
+      window.mock2 = ${stringify(testobj!"error")};
+      window.mock3 = ${stringify(test!"error")};
+    </script>
 
     <div class="g-doc">
       <div class="g-hd">
