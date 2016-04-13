@@ -21,7 +21,6 @@
     },
     "launch": true,
     "port": 8001,
-    "neiApi": "http://nei.hz.netease.com/api/parameter/getTestData?type=%s&id=%s",
     "mockTpl": "./demo/webapp/WEB-INF/views/mock/",
     "mockApi": "./demo/webapp/src/mock/",
     "viewExt": ".ftl"

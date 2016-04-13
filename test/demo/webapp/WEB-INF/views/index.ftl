@@ -5,7 +5,7 @@
 
     <#include "/common/macro.ftl">
 
-    <title>页面NEJ Module Sample - 前端实例入口</title>
+    <title>test</title>
     <meta charset="utf-8"/>
     <meta name="description" content="页面描述"/>
     <meta name="keywords" content="页面描述"/>
@@ -17,25 +17,27 @@
   </head>
   <body id="www-wd-com">
 
-    <#noparse>
+
     <div class="g-doc">
       <div class="g-hd">
-        <h1 class="m-logo">网易-杭研院-网易有范</h1>
-        <h2 class="m-title">网易有范</h2>
+        <h1 class="m-logo">test</h1>
+        <h2 class="m-title">${test!"orgin"}</h2>
       </div>
+      <#noparse>
       <div class="g-bd" id="module-box"></div>
+      </#noparse>
       <div class="g-bd">
         <div class="m-foot">
-            如有任何问题，请联系：蔡剑飞(<a href="mailto:caijf@corp.netease.com">caijf@corp.netease.com</a>)
+            test
         </div>
       </div>
       <div class="g-ft">
         <div class="m-foot">
-            &nbsp;&copy;&nbsp;网易-杭研院-网易有范
+            &nbsp;&copy;&nbsp;test
         </div>
       </div>
     </div>
-    
+    <#noparse>
     <div id="template-box" style="display:none;">
       <!-- @TEMPLATE -->
       <textarea name="html" data-src="module/tab/index.html"></textarea>
@@ -129,7 +131,7 @@
                         }
                     },
                     '/m/blog/tag/':'module/blog/tag/index.html',
-                    
+
                     '/m/setting':{
                         module:'module/layout/setting/index.html',
                         composite:{

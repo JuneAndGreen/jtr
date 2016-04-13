@@ -28,7 +28,6 @@
     "commander": "^2.9.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "express-freemarker": "^0.1.4",
     "express-velocity": "^1.0.0",
     "http-proxy": "^1.13.2",
     "path-to-regexp": "^1.2.1",

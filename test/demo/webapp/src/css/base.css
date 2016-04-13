@@ -22,7 +22,6 @@ a:hover{text-decoration:underline;color:#00a0e9;}
 textarea{overflow:auto;}
 button{line-height:normal;}
 body{line-height:1.5;word-wrap:break-word;word-break:break-all;}
-.m-logo{background:url("../../res/image/sprite.png") no-repeat 9999px 9999px;}
 .g-hd:after,.g-bd:after,.g-ft:after,.g-cols:after,.g-col:after,.g-cor:after{display:block;clear:both;visibility:hidden;height:0;content:".";}
 .g-hd,.g-bd,.g-ft,.g-cols,.g-col,.g-cor{zoom:1;}
 body{text-align:center;background:#333;}
