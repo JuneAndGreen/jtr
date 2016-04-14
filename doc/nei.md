@@ -4,7 +4,7 @@
 
 首先需要准备nei项目的配置文件，默认是当前路径下的nei.json，其结构如下：
 
-```json
+```javascript
 {
   /* 根目录 */
   "webRoot": "./demo/webapp/",
