@@ -8,9 +8,9 @@
     "engine": "freemarker",
     "routes": {
       "GET /api/account/authority/get": {"id": 15278, "method": "get", "path": "/api/account/authority/get"},
-      "GET /api/account/info/get":  {"id": 15277, "method": "get", "path":"/api/account/info/get"},
-      "GET /api/blog/list":  {"id": 15273, "method": "get", "path":"/api/blog/list"},
-      "GET /api/tag/list":  {"id": 15276, "method": "get", "path":"/api/tag/listt"},
+      "GET /api/account/info/get":  {"id": 15277, "method": "get", "path": "/api/account/info/get"},
+      "GET /api/blog/list":  {"id": 15273, "method": "get", "path": "/api/blog/list"},
+      "GET /api/tag/list":  {"id": 15276, "method": "get", "path": "/api/tag/list"},
       "GET /": {"index": 0, "list":[{"id": 10947, "path": "index"}]},
       "GET /blog/": {"index": 0, "list":[{"id": 10947, "path": "index"}]},
       "GET /blog/list/": {"index": 0, "list":[{"id": 10947, "path": "index"}]},
@@ -21,7 +21,7 @@
     },
     "launch": true,
     "port": 8001,
-    "neiApi": "http://nei.hz.netease.com/api/parameter/getTestData?type=%s&id=%s",
+    "neiApi": "",
     "mockTpl": "./demo/webapp/WEB-INF/views/mock/",
     "mockApi": "./demo/webapp/src/mock/",
     "viewExt": ".ftl"

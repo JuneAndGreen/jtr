@@ -15,10 +15,7 @@
   <#if obj?is_boolean || obj?is_number>
     <#return obj?string>
   </#if>
-  <#if obj?is_string>
-    <#return '"' + obj?js_string + '"'>
-  </#if>
-	<#if obj?is_enumerable>
+  <#if obj?is_enumerable>
 		<#local str = '['>
 		<#list obj as x>
 			<#local str = str + stringify(x)>
@@ -28,12 +25,15 @@
 		</#list>
 		<#return str + ']'>
 	</#if>
+  <#if obj?is_string>
+    <#return '"' + obj?js_string + '"'>
+  </#if>
 	<#if obj?is_hash || obj?is_hash_ex>
 		<#local str = '{'>
 		<#local arr = [] >
 		<#local keys = obj?keys>
 		<#list keys as x>
-			<#if x!='class' && obj[x]?? && !obj[x]?is_method>
+			<#if x!='class' && obj[x]??>
 				<#local arr = arr + [x]>
 			</#if>
 		</#list>

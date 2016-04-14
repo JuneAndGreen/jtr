@@ -1,13 +1,13 @@
 {
   "name": "jtr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "this is mock server",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "bin": {
     "jtr": "./bin/jtr"
+  },
+  "scripts": {
+    "test": "node ./bin/test"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,9 @@
     "http-proxy": "^1.13.2",
     "path-to-regexp": "^1.2.1",
     "qrcode-npm": "0.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.0"
   }
 }
