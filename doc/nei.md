@@ -47,7 +47,26 @@ jtr --nei -c [path]
 
 ## 通过依赖jtr模块来启动nei项目
 
-引用方式如下，注意路径不能是相对路径，不然会获取失败：
+引用方式如下，此时是取`process.cwd()`下的nei.json作为配置参数：
+
+```javascript
+var jtr = require('jtr');
+
+jtr({fromNei: true});
+```
+
+同时，也可以指定配置文件的路径来启动：
+
+```javascript
+var jtr = require('jtr');
+
+jtr({
+  fromNei: true,
+  config: '../config/nei.json'
+});
+```
+
+当直接传入配置参数的时候，要注意路径不能是相对路径，不然会获取失败：
 
 ```javascript
 var jtr = require('jtr');
