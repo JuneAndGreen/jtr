@@ -1,6 +1,6 @@
 {
   "name": "jtr",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "this is mock server",
   "main": "index.js",
   "bin": {
