@@ -13,10 +13,10 @@
   /* 路由 */
   "routes": {
     /* 异步接口 */
-    "GET /api/xxx/get": {"id": 15278, "method": "get", "path": "/api/xxx/get"},
-    "GET /api/xxx/info/get":  {"id": 15277, "method": "get", "path": "/api/xxx/info/get"},
+    "GET /api/xxx/get": {"id": 15278, "type":"api", "method": "get", "path": "/api/xxx/get"},
+    "GET /api/xxx/info/get":  {"id": 15277, "type":"api", "method": "get", "path": "/api/xxx/info/get"},
     /* 同步模板 */
-    "GET /": {"index": 0, "list":[{"id": 10947, "path": "index"}]}
+    "GET /": {"index": 0, "type":"tpl", "name": "首页XXX", "list":[{"id": 10947, "path": "index"}]}
   },
   /* 是否自动打开浏览器 */
   "launch": true,
@@ -82,10 +82,10 @@ jtr({
     /* 路由 */
     routes: {
       /* 异步接口 */
-      'GET /api/xxx/get': {id: 15278, method: 'get', path: '/api/xxx/get'},
-      'GET /api/xxx/info/get':  {id: 15277, method: 'get', path: '/api/xxx/info/get'},
+      'GET /api/xxx/get': {id: 15278, type: 'api', method: 'get', path: '/api/xxx/get'},
+      'GET /api/xxx/info/get':  {id: 15277, type: 'api', method: 'get', path: '/api/xxx/info/get'},
       /* 同步模板 */
-      'GET /': {index: 0, list:[{id: 10947, path: 'index'}]}
+      'GET /': {index: 0, type: 'api', name: '首页XXX', list:[{id: 10947, path: 'index'}]}
     },
     /* 是否自动打开浏览器 */
     launch: true,
