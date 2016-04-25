@@ -30,7 +30,7 @@
     "express": "^4.13.4",
     "express-velocity": "^1.0.0",
     "http-proxy": "^1.13.2",
-    "node-fmpp": "0.0.1",
+    "node-fmpp": "0.0.2",
     "path-to-regexp": "^1.2.1",
     "qrcode-npm": "0.0.3"
   },
