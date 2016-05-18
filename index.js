@@ -17,7 +17,7 @@ module.exports = function(config) {
       try {
         config = require(path.join(cwd, config || './nei.json'));
       } catch(e) {
-        console.error('缺少相关配置文件，请确保 当前目录下有nei.json文件 或者 用-c指定配置文件路径');
+        console.error('缺少相关配置文件，请确保当前目录下有nei.json文件，或者用-c指定配置文件路径');
         process.exit(1);
       }
 
