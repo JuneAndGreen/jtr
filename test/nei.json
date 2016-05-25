@@ -11,7 +11,7 @@
       "GET /api/account/info/get":  {"type":"api", "id": 15277, "path": "/get/api/account/info/get"},
       "GET /api/blog/list":  {"type":"api", "id": 15273, "path": "/get/api/blog/list"},
       "GET /api/tag/list":  {"type":"api", "id": 15276, "path": "/get/api/tag/list"},
-      "GET /": {"type":"tpl", "name": "主页", "index": 0, "list":[{"id": 10947, "path": "index"}]},
+      "GET /?xx=12": {"type":"tpl", "name": "主页", "index": 0, "list":[{"id": 10947, "path": "index"}]},
       "GET /blog/": {"type":"tpl", "name": "博客", "index": 0, "list":[{"id": 10947, "path": "index"}]},
       "GET /blog/list/": {"type":"tpl", "name": "博客列表", "index": 0, "list":[{"id": 10947, "path": "index"}]},
       "GET /blog/tag/": {"type":"tpl", "name": "博客标签", "index": 0, "list":[{"id": 10947, "path": "index"}]},
