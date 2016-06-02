@@ -1,53 +1,8 @@
 # nei 接入指南
 
-## 直接通过jtr命令启动nei项目
-
-首先需要准备nei项目的配置文件，默认是当前路径下的nei.json，其结构如下：
-
-```javascript
-{
-  /* 根目录 */
-  "webRoot": "./demo/webapp/",
-  /* 视图目录 */
-  "viewRoot": "./demo/webapp/WEB-INF/views/",
-  /* 路由 */
-  "routes": {
-    /* 异步接口 */
-    "GET /api/xxx/get": {"id": 15278, "type":"api", "path": "/get/api/xxx/get"},
-    "GET /api/xxx/info/get":  {"id": 15277, "type":"api", "path": "/get/api/xxx/info/get"},
-    /* 同步模板 */
-    "GET /": {"index": 0, "type":"tpl", "name": "首页XXX", "list":[{"id": 10947, "path": "index"}]}
-  },
-  /* 是否自动打开浏览器 */
-  "launch": true,
-  /* 端口 */
-  "port": 8001,
-  /* nei项目的在线数据url */
-  "neiApi": "",
-  /* 同步模块mock数据路径 */
-  "mockTpl": "./demo/webapp/WEB-INF/views/mock/",
-  /* 异步接口mock数据路径 */
-  "mockApi": "./demo/webapp/src/mock/",
-  /* 模板后缀 */
-  "viewExt": ".ftl"
-}
-```
-
-然后在配置文件所在目录下执行：
-
-```bash
-jtr --nei
-```
-
-假若你的配置文件在其他目录或者叫其他名字，可执行如下命令：
-
-```bash
-jtr --nei -c [path]
-```
-
 ## 通过依赖jtr模块来启动nei项目
 
-引用方式如下，此时是取`process.cwd()`下的nei.json作为配置参数：
+引用方式如下，此时是取`process.cwd()`下的jtr.js作为配置参数：
 
 ```javascript
 var jtr = require('jtr');
@@ -59,10 +14,11 @@ jtr({fromNei: true});
 
 ```javascript
 var jtr = require('jtr');
+var path = require('path');
 
 jtr({
   fromNei: true,
-  config: '../config/nei.json'
+  config: path.join(__dirname, '../config/jtr.js')
 });
 ```
 

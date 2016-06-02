@@ -45,13 +45,6 @@
   .u-ebtn:hover{
     background-color: #455a6f;
   }
-  .weinre{
-    display: none;
-  }
-
-  .weinre .u-ebtn{
-    margin-top: 20px;
-  }
   a.u-ebtn,a.u-ebtn:hover, a.u-ebtn:active{
     text-decoration: none;
     color: #fff;
@@ -85,9 +78,6 @@
     .m-qrcode img{
       width: 200px;
       height: 200px;
-    }
-    .weinre{
-      display: block;
     }
   }
 
@@ -141,9 +131,6 @@
           <% }) %>
         </ul>
       </div>
-      <% if (!!inspectHost){  %>
-        <a target='_blank' href="<%= inspectHost %>" class="u-ebtn">Weinre Dashboard</a>
-      <% } %>
     </div>
   </div>
 </body>

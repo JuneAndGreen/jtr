@@ -1,14 +1,14 @@
 var path = require('path');
-
 var jtr = require('../index');
-var options = require('./nei.json');
 
-options.viewRoot = path.join(__dirname, options.viewRoot);
-options.webRoot = path.join(__dirname, options.webRoot);
-options.mockTpl = path.join(__dirname, options.mockTpl);
-options.mockApi = path.join(__dirname, options.mockApi);
+// 传配置文件启动
+// jtr({
+//   fromNei: true,
+//   config: require('./jtr.js')
+// });
 
+// 传配置文件路径启动
 jtr({
   fromNei: true,
-  config: options
+  config: path.join(__dirname, './jtr.js')
 });

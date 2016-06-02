@@ -17,7 +17,7 @@ var routes = {
 
 jtr({
   port: 8001,
-  dir: './demo/webapp/',
+  dir: path.join(__dirname, './demo/webapp/'),
   views: './WEB-INF/views/',
   rules: routes,
   launch: true

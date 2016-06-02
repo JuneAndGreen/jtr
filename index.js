@@ -13,18 +13,13 @@ module.exports = function(config) {
     config = options.config;
 
     if(!config || typeof config === 'string') {
-      // 如果没有配置项，直接找当前目录下的config
+      // 如果没有配置项，直接找当前目录下的jtr.js
       try {
-        config = require(path.join(cwd, config || './nei.json'));
+        config = require(config ? config : path.join(cwd, './jtr.js'));
       } catch(e) {
-        console.error('缺少相关配置文件，请确保当前目录下有nei.json文件，或者用-c指定配置文件路径');
+        console.error('缺少相关配置文件，请确保当前目录下有jtr.js文件，或者用-c指定配置文件路径');
         process.exit(1);
       }
-
-      config.viewRoot = path.join(cwd, config.viewRoot);
-      config.webRoot = path.join(cwd, config.webRoot);
-      config.mockTpl = path.join(cwd, config.mockTpl);
-      config.mockApi = path.join(cwd, config.mockApi);
     }
 
     nei.setting({
