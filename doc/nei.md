@@ -54,7 +54,9 @@ jtr({
     /* 异步接口mock数据路径 */
     mockApi: path.join(__dirname, './demo/webapp/src/mock/'),
     /* 模板后缀 */
-    viewExt: '.ftl'
+    viewExt: '.ftl',
+    /* 模板引擎 */
+    engine: 'freemarker'
   }
 });
 ```
