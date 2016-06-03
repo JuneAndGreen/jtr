@@ -25,5 +25,6 @@ module.exports = {
     neiApi: '',
     mockTpl: path.join(__dirname, './demo/webapp/WEB-INF/views/mock/'),
     mockApi: path.join(__dirname, './demo/webapp/src/mock/'),
-    viewExt: '.ftl'
+    viewExt: '.ftl',
+    engine: 'freemarker'
 };
